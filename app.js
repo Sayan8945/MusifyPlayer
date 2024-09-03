@@ -58,9 +58,9 @@ for (track of tracks){
 
 async function playSong(){
     let songs = await getSongs();
-    // console.log(songs);
-    // var audio = new Audio(songs[0]);
-    // audio.play();
+    console.log(songs);
+    var audio = new Audio(songs[0]);
+    audio.play();
 
     let songUL = document.querySelector(".songList").getElementsByTagName("ul")[0];
     for (song of songs) {
