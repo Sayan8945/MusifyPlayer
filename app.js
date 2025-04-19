@@ -28,8 +28,8 @@ playSong();
 let currentSong = new Audio();
 
 function playMusic(music){
-    let audio = new Audio("/songs/" + music);
-    currentSong.src = "/songs/" + music;
+    let audio = new Audio("/song/" + music);
+    currentSong.src = "/song/" + music;
     currentSong.play();
 }
 function playTrack(music){
