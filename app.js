@@ -7,7 +7,7 @@ let songPic = document.querySelector(".cob-album");
 let playlistBox = document.querySelector("#playlistBox");
 
 async function getSongs(){
-    let song = await fetch("http://127.0.0.1:5500/songs/");
+    let song = await fetch("http://127.0.0.1:5500/song/");
     let response = await song.text();
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -18,7 +18,7 @@ async function getSongs(){
     for (let idx=0; idx < a.length; idx++){
         let el = a[idx];
         if (el.href.endsWith(".mp3")) {
-            songs.push(el.href.split("/songs/")[1]);
+            songs.push(el.href.split("/song/")[1]);
         }
     }
 
