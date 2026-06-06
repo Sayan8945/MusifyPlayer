@@ -5,7 +5,7 @@ let next = document.querySelector("#next");
 let songName = document.querySelector(".play-song");
 let songPic = document.querySelector(".cob-album");
 let playlistBox = document.querySelector("#playlistBox");
-  
+
 async function getSongs(){
     let song = await fetch("http://127.0.0.1:5500/song/");
     let response = await song.text();
