@@ -1,7 +1,7 @@
 let play = document.querySelector("#play");
 let prev = document.querySelector("#prev");
 let next = document.querySelector("#next");
-  
+
 let songName = document.querySelector(".play-song");
 let songPic = document.querySelector(".cob-album");
 let playlistBox = document.querySelector("#playlistBox");
